@@ -46,6 +46,9 @@ p {
   text-decoration: underline;
 }
 
+/* button layout stuff */
+/* Hyperlink stylings and hover effeccts WIP */
+
 .button {
   background-color: rgb(121, 0, 109);
   border: none;
@@ -60,8 +63,41 @@ p {
   cursor: pointer;
   background-image: linear-gradient(rgb(190, 49, 192), rgb(73, 0, 62));
 }
+.button:hover { background-image: linear-gradient(rgb(125, 49, 192), rgb(44, 0, 73))}
 
-/* Optional containers */
+.button:active {
+  background-image: linear-gradient(rgb(24, 7, 177), rgb(17, 6, 52));
+  box-shadow: 0 5px #240029;
+  transform: translateY(4px);
+}
+
+
+/* unvisited link */
+a:link {
+  color: rgb(136, 221, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(206, 10, 10);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+ul li a:hover {
+  background-color: #180180;
+  border-radius: 25px;
+  
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
