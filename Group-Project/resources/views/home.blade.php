@@ -37,8 +37,8 @@
        <div class="button">
         <div><img src="assets/images/html_logo.png" alt="htmllogo" style="width:150px;height:150px;">
       <h2>HTML</h2>
-      </div>
       <p>HTML, or HyperText Markup Language, is...</p>
+      </div>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </section>
 
@@ -46,8 +46,8 @@
       <div class="button">
          <div><img src="assets/images/css_logo.png" alt="csslogo" style="width:150px;height:150px;">
       <h2>CSS</h2>
-      </div>
       <p>CSS, which stands for Cascading Style Sheets, is...</p>
+      </div>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </section>
 
@@ -55,8 +55,8 @@
       <div class="button">
          <div><img src="assets/images/javascript_logo.png" alt="javascriptlogo" style="width:150px;height:150px;">
       <h2>JavaScript</h2>
-      </div>
       <p>JavaScript is a high-level...</p>
+      </div>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </section>
 
@@ -64,8 +64,8 @@
       <div class="button">
          <div><img src="assets/images/node-js_logo.png" alt="node-jslogo" style="width:150px;height:150px;">
       <h2>Node.js</h2>
-      </div>
       <p>Node.js is an open-source...</p>
+      </div>
       <a href="#top" class="back-to-top">Back to top ↑</a>
     </section> 
     </div>
