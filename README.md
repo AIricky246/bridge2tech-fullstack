@@ -1,59 +1,229 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 4-Week Full-Stack Team Project: Task Management Application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Project Type:** Full-Stack Web Application  
+**Team Size:** 4 Developers  
+**Timeline:** 4 Weeks  
+**Tech Stack:** PHP/Laravel, MySQL, JavaScript, HTML/CSS  
+**Bonus Points:** Laravel Framework Usage
 
-## About Laravel
+***
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📋 Project Overview
+Build a collaborative Task Management Application where teams can create projects, assign tasks, track progress, and manage team workflows. This project integrates full-stack development skills: PHP fundamentals, Laravel MVC, MySQL databases, JavaScript interactions, and authentication.[1]
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+***
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🎯 Learning Objectives
+By completing this project, students will demonstrate proficiency in:
 
-## Learning Laravel
+- **PHP & Laravel:** Server-side logic, routing, controllers, models, Blade templating
+- **Database Design:** MySQL schema design, migrations, relationships, CRUD operations
+- **Authentication:** User registration, login, role-based access control (RBAC)
+- **JavaScript:** Dynamic UI updates, AJAX requests, form validation
+- **Git Workflow:** Feature branching, pull requests, code reviews, merge conflicts
+- **Team Collaboration:** Agile planning, task distribution, communication[1]
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+***
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🏗️ Core Requirements
 
-## Laravel Sponsors
+### 1. User Authentication & Authorization
+- User registration with email validation
+- Secure login/logout functionality
+- Password hashing (bcrypt)
+- Role-Based Access Control (RBAC):  
+  - Admin: Full access to all projects and users  
+  - Project Manager: Can create projects and assign tasks  
+  - Team Member: Can view assigned tasks and update status
+- User profile page with editable information
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Project Management
+- Create projects: name, description, dates, status
+- View all projects (filtered by role)
+- Edit and soft-delete projects
+- Assign team members to projects
 
-### Premium Partners
+### 3. Task Management
+- Create tasks: title, description, priority, status, due date, assigned user
+- View/filter tasks by project/user/status/priority
+- Update task status (drag-and-drop)
+- Edit/delete/complete tasks
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 4. Dashboard & Reporting
+- User dashboard: assigned tasks, upcoming deadlines, stats
+- Project dashboard: team members, task breakdown, completion %
+- Visual indicators: progress bars, color coding
 
-## Contributing
+### 5. Database Requirements
+- MySQL database: `users`, `projects`, `tasks`, `project_user` (pivot, many-to-many)
+- Foreign key relationships
+- Laravel migrations/seeders (bonus)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 6. User Interface
+- Responsive design (mobile, tablet, desktop)
+- Consistent navigation, form validation (JS/PHP), accessible and friendly UX
 
-## Code of Conduct
+### 7. Security
+- SQL injection prevention (PDO/Eloquent)
+- XSS protection (escape output)
+- CSRF protection (tokens)
+- Input validation/sanitization
+- Enforced secure password requirements[1]
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+***
 
-## Security Vulnerabilities
+## 🚀 Bonus Features (Extra Credit)
+- Comprehensive Laravel implementation (+20 points)
+- Advanced features (+10 points each):  
+    - Real-time notifications  
+    - File attachments  
+    - Task comments/discussion  
+    - Email notifications  
+    - Audit trail  
+    - Search across projects/tasks  
+    - Export reports (PDF/CSV)  
+    - Dark mode
+- JavaScript enhancements:  
+    - Kanban drag-and-drop  
+    - Dynamic forms  
+    - Auto-save drafts  
+    - Character counts  
+    - Modal windows
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+***
 
-## License
+## 👥 Team Roles & Responsibilities
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Role                        | Primary Responsibilities                                                | Key Deliverables                       |
+|-----------------------------|------------------------------------------------------------------------|----------------------------------------|
+| Backend Lead (PHP/Laravel)  | Architecture, schema/migrations, authentication, API, validation       | Auth system, migrations, CRUD, API     |
+| Frontend Lead (UI/UX)       | Responsive layouts, templates, CSS, accessibility, UI consistency      | Layouts, forms, navigation, dashboards |
+| JS Developer (Interactivity)| Client form validation, AJAX, drag-and-drop, dynamic feedback          | JS scripts, AJAX updates, dashboards   |
+| DB & Testing Lead (Data)    | Schema design/optimization, queries, testing, data seeding             | Schema docs, queries, test data        |
+
+***
+
+## 🛠️ Project Management Process
+
+- Kickoff planning: Requirements, roles, environment, Git workflow (branching, PRs, code review)
+- Backend foundation: Auth, migrations, CRUD
+- Frontend integration: UI, role-based navigation, AJAX
+- Polish and deployment: Full testing, security checks, docs, deployment readiness
+
+***
+
+## 📝 Documentation Section
+
+### Team Members
+- Backend Lead: [Name]
+- Frontend Lead: [Name]
+- JavaScript Developer: [Name]
+- DB & Testing Lead: [Name]
+
+### Installation
+1. Clone repository  
+2. Run `composer install` (if Laravel)  
+3. Configure `.env` (DB creds)  
+4. Run `php artisan migrate --seed` or import SQL  
+5. Start dev server: `php artisan serve` or configure web server
+
+### Features Implemented
+- Auth (RBAC)
+- Project/task CRUD
+- Dashboard stats
+- Responsive design
+
+### Tech Stack
+- PHP 8+, Laravel 10+  
+- MySQL 8+  
+- JavaScript (ES6+)  
+- HTML5/CSS3  
+- Git
+
+### API Endpoints (Laravel Example)
+- `POST /api/tasks/{id}/status` – Update task status
+- `GET /api/projects/{id}/stats` – Get project statistics
+
+### Known Issues & Future Enhancements
+- [Add as needed]
+
+***
+
+## 🏆 Grading Rubric (100 Points)
+
+- Backend: 30 – Auth (8), project CRUD (7), task CRUD (7), design (5), API (3)
+- Frontend/UX: 25 – Responsive (8), UX (7), validation (5), consistency (5)
+- JavaScript: 15 – AJAX (5), validation (5), UI interactions (5)
+- Security: 10 – SQLi (3), XSS (3), CSRF (2), Validation (2)
+- Git/Collab: 10 – Good commits (3), branching (2), PRs (3), no broken code (2)
+- Docs: 10 – README (3), code comments (2), presentation (5)
+- **Bonus**: Up to +40 for advanced/Laravel/extra features
+
+***
+
+## 📊 Milestones & Instructor Reviews
+
+- Week 1: Planning, schema, repo, roles – 25%
+- Week 2: Auth, migrations, CRUD – 50%
+- Week 3: UI integration, AJAX, RBAC enforced – 75%
+- Week 4: Presentation/demo, full feature checklist – 100%
+
+***
+
+## 🛠️ Technical Specs
+
+- PHP 8+, MySQL 8+, Composer, Node.js/npm, Git
+- Detailed file structures for both Laravel and plain PHP projects are included
+
+***
+
+## 💡 Development Tips
+
+- Start with authentication
+- Use migrations, prepared statements, middleware for security
+- Responsive and accessible UI
+- Clean, meaningful commit messages
+
+***
+
+## 🚨 Common Pitfalls
+
+- Avoid merge conflicts (pull often from `dev`)
+- Use config for credentials, not hardcoded values
+- Always review each other's code
+- Validate/sanitize all user input
+
+***
+
+## 🎓 Learning Resources
+
+- Laravel Docs, PHP Manual, Laracasts
+- MDN Web Docs, JavaScript.info
+- MySQL Docs, Lucidchart for DB design
+- GitHub Flow
+
+***
+
+## 📝 Submission Requirements
+
+- Code in organized GitHub repo (README, code comments)
+- All members with meaningful commit history
+- Deployed demo/localhost, sample data loaded, full features
+- Presentation with live demo, technical discussion, Q&A
+
+***
+
+## 🎉 Success Criteria
+
+- All core features, security, responsive UX, solid team workflow, comprehensive docs, zero critical bugs
+- Bonus for advanced Laravel implementation
+
+***
+
+## 💬 Support
+
+- Daily syncs (optional), instructor check-ins, dedicated team chat, office hours
+
+***
+
+Remember: Focus on communication, planning, testing, and documentation as you build. Good luck and happy coding!
