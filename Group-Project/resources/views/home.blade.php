@@ -21,11 +21,35 @@
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
         <body>
-
+    <!-- Search Bar -->
   <form action="/search" method="get">
   <input type="search" id="search-input" name="q" placeholder="Search...">
   <button type="submit">Search</button>
 </form>
+
+    <!-- Login Page NEEDS TESTING!!! -->
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Login</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+
+    </div>
+  </form>
+</div>
 
   <header>
     <h1>Web Development Overview2</h1>
