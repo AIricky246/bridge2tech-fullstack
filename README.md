@@ -1,6 +1,3 @@
-
-***
-
 # 4-Week Full-Stack Team Project: Task Management Application
 
 **Project Type:** Full-Stack Web Application  
@@ -193,7 +190,7 @@ By completing this project, students will demonstrate proficiency in:
 
 - Avoid merge conflicts (pull often from `dev`)
 - Use config for credentials, not hardcoded values
-- Always review each other’s code
+- Always review each other's code
 - Validate/sanitize all user input
 
 ***
