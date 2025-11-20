@@ -38,7 +38,7 @@
 
       <div class="col">
         <div class="hide-md-lg">
-          <p>sign in manually:</p>
+          <p>sign in:</p>
         </div>
 
         <input type="text" name="username" placeholder="Username" required>
