@@ -55,44 +55,30 @@
   </header>
 
   <main>
-    <div class="flex-container">
-    <section id="html">
-       <div class="button">
-        <div><img src="{{ asset('assets/images/html_logo.png') }}" alt="HTML logo" class="tech-logo">
-      <h2>HTML</h2>
-      <p>HTML, or HyperText Markup Language, is...</p>
-      </div>
-      <a href="#top" class="back-to-top">More Info</a>
-    </section>
+  <div class="flex-container">
 
-    <section id="css">
-      <div class="button">
-         <div><img src="{{ asset('assets/images/css_logo.png') }}" alt="CSS logo" class="tech-logo">
-      <h2>CSS</h2>
-      <p>CSS, which stands for Cascading Style Sheets, is...</p>
-      </div>
-      <a href="#top" class="back-to-top">More info</a>
-    </section>
+    @if(isset($topics) && $topics->count() > 0)
+        @foreach($topics as $topic)
+            <section id="{{ strtolower($topic->category) }}">
+                <div class="button">
+                    <div>
+                        <img src="{{ asset('assets/images/' . strtolower($topic->category) . '_logo.png') }}" 
+                             alt="{{ $topic->title }} logo" class="tech-logo">
+                        <h2>{{ $topic->title }}</h2>
+                        <p>{{ $topic->description }}</p>
+                    </div>
+                    <a href="#top" class="back-to-top">More info</a>
+                </div>
+            </section>
+        @endforeach
+    @else
+        <p>No topics found.</p>
+    @endif
 
-    <section id="javascript">
-      <div class="button">
-         <div><img src="{{ asset('assets/images/javascript_logo.png') }}" alt="JavaScript logo" class="tech-logo">
-      <h2>JavaScript</h2>
-      <p>JavaScript is a high-level...</p>
-      </div>
-      <a href="#top" class="back-to-top">More info</a>
-    </section>
+  </div>
+</main>
 
-    <section id="nodejs">
-      <div class="button">
-         <div><img src="{{ asset('assets/images/node-js_logo.png') }}" alt="Node.js logo" class="tech-logo">
-      <h2>Node.js</h2>
-      <p>Node.js is an open-source...</p>
-      </div>
-      <a href="#top" class="back-to-top">More info</a>
-    </section> 
-    </div>
-  </main>
+
 
   <footer class="footer">
     <p>© 2025 Web Dev Project</p>

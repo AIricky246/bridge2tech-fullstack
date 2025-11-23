@@ -1,0 +1,42 @@
+# Query: controllers
+# ContextLines: 1
+
+3 results - 3 files
+
+README.md:
+  18  
+  19: - **PHP & Laravel:** Server-side logic, routing, controllers, models, Blade templating
+  20  - **Database Design:** MySQL schema design, migrations, relationships, CRUD operations
+
+app\Http\Controllers\Controller.php:
+  2  
+  3: namespace App\Http\Controllers;
+  4  
+
+app\Http\Controllers\SearchController.php:
+  2  
+  3: namespace App\Http\Controllers;
+  4  
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Topic;
+
+class SearchController extends Controller
+{
+    public function search(Request $request)
+    {
+        // Get the search query from the frontend form
+        $query = $request->input('q');
+
+        // Search the topics table for matching title or category
+        $topics = Topic::where('title', 'like', "%{$query}%")
+                        ->orWhere('category', 'like', "%{$query}%")
+                        ->get();
+
+        // Return the 'home' view with the search results
+        return view('home', ['topics' => $topics]);
+    }
+}
